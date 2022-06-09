@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>table</title>
+        <style media="screen">
+            th,td {border: 1px solid; width: 50px; height: 50px}
+        </style>
+    </head>
+    <body>
+        <table>
+            <caption>Montly Saving</caption> <!--<caption>: 표의 제목을 나타내는 태그-->
+            <thead> <!--<thead>: 제목 행을 그룹화하는 태그-->
+                <tr>
+                    <th>Month</th>
+                    <th>Saving</th>
+                </tr>
+
+            </thead>
+            <tfoot> <!--<tfoot>: 바닥 행을 그룹화하는 태그-->
+                <tr>
+                    <td colspan="2">Sum</td> <!--행병합-->
+                </tr>
+            </tfoot>
+            <tbody> <!--<tbody>: 본문 행을 그룹화하는 태그-->
+                <tr>
+                    <td>January</td>
+                    <td rowspan="2">$100</td> <!--rowspan: 열병합-->
+                </tr>
+                <tr>
+                    <td>February</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>

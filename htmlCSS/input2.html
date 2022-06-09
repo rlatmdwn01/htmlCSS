@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>form</title>
+    </head>
+    <body>
+        <h1>Form 관련 요소</h1>
+        아이디: <input type="text" placeholder="영문으로만 써주세요"><br>
+        <!--text는 주로 아이디, 이름, 주소, 전화번호등 단순한 텍스트 입력 때 사용-->
+        <!--placeholder: 사용자가 입력하기 전에 미리 화면에 노출하는 값으로, 입력하는 값의 양식을 표현-->
+        비밀번호: <input type="password"><br>
+        <!--암호와 같이 공개할 수 없는 내용 입력할 때 사용-->
+        <!--실제로 입력할 때 값을 노출하지 X-->
+        성별: 남자 <input type="radio" name="gender">, 여자 <input type="radio" name="gender"><br>
+        <!--라디오 버튼(o버튼)을 만들 때 사용-->
+        <!--라디오 버튼은 중복 선택이 불가능하게 만들기 위해서 name 사용-->
+        취미: 영화감상 <input type="checkbox" name="hobby">, 음악감상 <input type="checkbox" name="hobby">, 독서 <input type="checkbox" name="hobby"><br>
+        <!--name 속성은 라디오 버튼과 체크박스를 그룹화시켜주는 속성-->
+        프로필 사진 업로드: <input type="file"><br>
+        <!--파일을 서버에 올릴 때 사용-->
+        <input type="submit"value="전송"><br> <!--form의 값을 전송하는 버튼-->
+        <input type="reset" value="취소"><br> <!--form의 값을 초기화하는 버튼-->
+        <input type="button" value="등록"><br> <!--아무 기능이 없는 버튼-->
+        <input type="image" src="" alt="" width="" height=""> <!--이미지를 삽입할 수 있는 버튼 (submit과 동작이 동일함)-->
+    </body>
+</html>

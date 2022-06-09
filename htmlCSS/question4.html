@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>가상 클래스 스타일 바꾸기</title>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <style>
+            /* 여기에 스타일을 추가합니다. */
+            #name:focus{background-color:red;}
+            /* 지정시에 빈칸이 빨간색으로 변화합니다. */
+            #name:active{background-color: red;}
+            /* 지정 후에도 빨간색이 유지되도록 합니다.*/
+
+        </style>
+    </head>
+
+    <body>
+        <form action=""method="post">
+            <input type="text" id="name" name="name"><label for="name">이름</label><br><br>
+            <input max="10" min="1" type="number" id="age" name="age" value="1"><label for="age">나이</label>
+            <!--미션 4에서 과제 완료 후에는 1이 나와있기 때문에 시작 값을 1로 지정-->
+
+            <fieldset>
+                <legend>좋아하는 색</legend>
+
+                <input type="checkbox" id="blue" name="fav-color" value="blue" checked><label for="blue">파란색</label>
+                <!--미션 4에서 과제 완료 후에 처음부터 체크되어 있도록 바뀌어져 있기 때문에 checked 추가함-->
+                <input type="checkbox" id="red" name="fav-color" value="red" checked><label for="red">붉은색</label>
+                <!--미션 4에서 과제 완료 후에 처음부터 체크되어 있도록 바뀌어져 있기 때문에 checked 추가함-->
+                <input type="checkbox" id="green" name="fav-color" value="green" checked><label for="green">녹색</label>
+                <!--미션 4에서 과제 완료 후에 처음부터 체크되어 있도록 바뀌어져 있기 때문에 checked 추가함-->
+            </fieldset>
+            <br>
+
+            <input type="submit">
+        </form>
+    </body>
+</html>
